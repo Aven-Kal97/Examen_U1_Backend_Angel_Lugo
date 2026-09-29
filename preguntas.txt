@@ -1,0 +1,55 @@
+PREGUNTAS - UNIDAD I ANGEL ABRAHAM LUGO SAENZ
+
+1. Explica dos diferencias entre una API REST y un servidor GraphQL.
+
+Respuesta: Creo que la diferencia mas notable que podemos asociar entre ellos, es que por ejemplo en una API REST
+tenemos que ir a cada enpoint o metodo CRUD que nosotros necesitemos ejmplo:
+GET Nombre_Estiante
+GET Matricula
+A diferencia del GraphQL donde podemos tenerlo mas centralizado y donde tenemos un unico enpoint pero
+con la desventaja que en ese enpoint tenemos que escribir todos los parametros que necestemos buscar (GET)
+o consultar (querry) o mutar/ modificar (mutation), siendo tecnicamente un mini sql sin necesidad de todos los
+comando de este mismo.
+
+
+2. Indica una situación en la que conviene usar REST y otra en la que conviene usar GraphQL.
+
+Respuesta: La situacion donde mas utilizaria el REST serian para ejercicios de aprendizaje donde tenga ver
+de manera sencila y visual cada uno de mis enpoints eso ayuda a poder entender el flujo de trabajo de un programa
+y un GraphQL seria mas factible en ejercicios o proyectos con un poco mas de complejidad, donde necesite tantos
+enpoints ( ejemplo 20) que seria incomodo tener que navegar entre ellos, por lo que centralizarlo en uno solo
+sea mas comodos para estar manejandoe el flujo del proyecto, siendo el ejemplo mas factible este examend de unidad 1
+y los 2 ejercicios anteriores, donde tenemis N:M pero tenemos que cuidar que no hubiera duplicacion.
+
+
+3. ¿Qué diferencia hay entre una imagen y un contenedor? ¿Qué papel cumple el Dockerfile en esa relación?
+
+Respuesta:Entiendo que por imagen o contenedor de docker es una plantilla como lo seria un contrato o una clase
+ abstracta o interfaz en POO ya que son plantilla, ya que ahi se contiene lo necesario para que nosotros podamos
+ ejecutar nuestro programa y un DOCKERFILE es mas el conjunto de instrucciones del flujo de construccion de un
+ programa como lo seria una "receta de comida" o los pasos que necesitamos seguir al pie de la letra para poder
+ realizarlo.
+
+4. ¿Para qué sirve Docker Compose? En el mapeo 8000:8000, ¿qué representa el primer 8000 y qué representa el segundo?
+
+Respuesta: Docker compuse nos permite realizar esos pasos o instrucciones para poder crear o correr nuestro
+programa, ya que ahi es donde estariamos manejando los diferentes servicios, ya el .tml o el consultar el estado
+con el compose ps o crearloc on el build y en este caso el "8000:8000", lo que quiere decir es que
+la primera parte es decir el 8000 : es el puerto de nuestro equipo y el : 8000 es el puerto que el contenedor
+nos asigna para poder correr nuestro programa y visualizarlo en una instancia http: localhost, lo que si desconozco
+es que si nosotros podemos asignale en que puerto ejecutarlo, aunque recordando la clase de redes de mascaras y sub
+mascaras de red, quiero supones que si, pero eso si esta fuera de mi concomiento, asi que una disculpa profe si
+esta duda puede ser un poco tonta.
+
+
+5. ¿Por qué las laptops del ejercicio 1 se guardan en MySQL y no en una lista de Python? ¿Qué identifica la llave primaria id?
+
+Respuesta: Este punto no se si lo entiendi del todo como para explicarlo, pero entiendo que es mas por un tema de persistencia
+de datos, ya que si lo guardamos en un archivo de de python, corremos el riesgo que las modificaciones que nosotros
+hagamos no se vean reflejadas al reiniciar el programa, ya que solo viven en la memoria temporal o volatil de programa
+en cambio a usar una base de datos o MYQSL, son datos que se asigna o se guardan en un base datos, lo que impide
+el problema que tenememos con una lista de python, por lo que realizar modificaciones como borrar, crear uno nuevo
+consultar, etc; sabemos que se quedaran guardados en la base datos y podemos acceder a ellos las veces que necesitemoss y
+lo que identifica la llave primaria es la manera unica de que laptop, ya que el "id" o el numero que nosotros le asignemos
+a cada laptop no puede ser repetible, siendo mas facil el acceso por busqueda, ya que podemos tener laptops
+de la misma marca como MSI, modelo y ram pero cada una de las laptops MSI tendrian un ID diferente,
